@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 // creating component that creates HTML
 
- const App = function() {
+ const App = () => {
      return <div>hi!</div>;
  }
 
