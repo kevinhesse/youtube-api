@@ -6,8 +6,15 @@ import React, { Component } from 'react';
 
 class SearchBar extends Component {
   render() {
-    return <input />;
-  }
+    return <input onChange={(event) => console.log(event.target.value) } />;
+  //() on event can be dropped when only a single argument
+}
+
+//using es6 we added arrow function above to eliminate this code
+//   onInputChange(event) {
+//     console.log(event.target.value)
+
+//   }
 }
 
 
