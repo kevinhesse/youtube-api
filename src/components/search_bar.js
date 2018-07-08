@@ -12,10 +12,21 @@ class SearchBar extends Component {
   }
 
   render() {
-    return <input onChange={(event) => this.setState({ term: event.target.value }) } />;
+    return ( 
+    <div>
+
+      <input
+        value = { this.state.term }
+        onChange={ (event) => this.setState({ term: event.target.value }) } />
+        
+      
+    </div>
+
+);
 }
 
 }
+
 //super calls parent method Component "automatically"
 //() on event can be dropped when only a single argument
 //using es6 we added arrow function above to eliminate this code
