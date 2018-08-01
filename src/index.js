@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { component } from 'react';
 import ReactDOM from 'react-dom';
 import YTSearch from 'youtube-api-search';
 import SearchBar from './components/search_bar';
@@ -15,12 +15,14 @@ YTSearch ({ key: API_KEY, term: 'surfboards' }, function(data) {
 
 // creating component that creates HTML
 
- const App = () => {
+ class App extends component {
+     render () {
      return(  
      <div>
          <SearchBar />
      </div>
-     )
+     );
+    }
  }
 
 // take the componemnts and put it on the page
