@@ -19,7 +19,7 @@ YTSearch ({key: API_KEY, term: "surfboards"}, (data => {
      constructor(props) {
          super(props);
 
-         this.state = { };
+         this.state = { videos: [] };
      }
      render () {
      return(  
